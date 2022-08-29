@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        table {
+            border-spacing: 0;
+        }
+        td {
+            padding: 0;
+        }
+        img {
+            border: 0;
+            max-width: 100%;
+        }
+        /****************
+            CSS CLASSES
+        *****************/
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+        }
+        .main {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            border-spacing: 0;
+            border: 2px solid red;
+            background-color: #F7F7F7;
+            padding-top: 33px;
+            padding-bottom: 137px;
+        }
+        .header {
+            padding-left: 21px;
+            padding-right: 30px;
+        }
+        .header-text {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 40px;
+            border: 2px solid #C2C2C2;
+            border-radius: 25px;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 2px 50px 2px 13px;
+            margin-top: 0;
+            margin-bottom: 0;
+            white-space: nowrap;
+        }
+        .header-sub-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            margin-top: 0;
+            padding-left: 1rem;
+        }
+        .link {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 40px;
+            color: #666666;
+            padding-left: 1rem;
+        }
+        .padding {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .cta-btn {
+            background: #92B605;
+            border-radius: 6px;
+            color: white;
+            padding: 10px 26px;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 20px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+        }
+        .num {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #CC0000;
+            color: #FFFFFF;
+            font-size: 28px;
+            line-height: 40px;
+        }
+
+        .table-content {
+            display: inline-block;
+            max-width: 150px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <table class="main" width="100%">
+            <!-- header -->
+            <tr>
+                <td class="header">
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <h6 class="header-text">subject line:</h6>
+                                <p class="header-sub-text">Enjoy your reward for renewing your policy.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h6 class="header-text">preheader:</h6>
+                                <p class="header-sub-text">Download your digital Prepaid Visa card. 
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding-top: 20px;padding-bottom: 20px;">
+                                <a href="#" class="link">View Online</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- banner -->
+            <tr>
+                <td class="padding">
+                    <table width="100%">
+                        <tr style="line-height: 0;">
+                            <td>
+                                <img src="./img/logo-sm.png" alt="This is the top logo">
+                            </td>
+                        </tr>
+
+                        <tr style="line-height: 0;">
+                            <td>
+                                <img src="./img/logo-lg.png" alt="This is full logo">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- person name -->
+            <tr>
+                <td class="padding">
+                    <table width="100%" style="background:white;">
+                        <tr>
+                            <td style="padding-top: 30px; padding-bottom: 40px;text-align: center;color: #535353;
+                            ">
+                                <h6 class="primary-text" style="margin: 0;">
+                                    <small style="font-size: 20px;line-height: 36px;">
+                                        Hi 
+                                        <span class="f-name" style="color: #3B82F6;">EBPearls</span>
+                                    </small> 
+                                </h6>
+
+                                <h5 class="primary-text" style="margin: 0;font-weight: 600;font-size: 30px;line-height: 36px;">
+                                    Here's your <span class="amount" style="color: #3B82F6;">$500</span> reward!
+                                </h5>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- redeem reward -->
+            <tr>
+                <td class="padding">
+                    <table width="100%" style="background:white;padding: 30px 20px;margin-top: 20px;">
+                        <!-- image -->
+                        <tr>
+                            <td style="text-align: center;">
+                                <img src="./img/reward.png" alt="This is the reward logo">
+                            </td>
+                        </tr>
+
+                        <!-- reward text -->
+                        <tr>
+                            <td style="text-align: center;font-weight: 400;font-size: 15px; line-height: 22px;color: #535353;">
+                                <p style="margin-top: 30px;margin-bottom: 30px;">
+                                    Renewing your AAMI insurance means your <span class="amount" style="color: #3B82F6;">$500</span>  worth of AAMI rewards credit has been turned into a digital Prepaid Visa card. How easy was that? The only hard part is choosing how you’ll spend it.
+                                </p>
+                                <button class="btn cta-btn">REDEEM YOUR REWARD</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- steps -->
+            <tr>
+                <td class="padding" class="columns">
+                    <table width="100%" style="background:white;margin-top: 20px;padding: 30px 10px;">
+                        <tr>
+                            <td style="text-align: center;font-weight: 700;font-size: 27px; line-height: 36px;color: #535353;">
+                                <h4 style="margin: 0;">Follow the steps below to download your digital Prepaid Visa card.</h4>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="cols">
+                                <table width="100%" class="table-content">
+                                    <tr>
+                                        <td>
+                                            <p class="num">1</p>
+                                            <p class="step-descrip">Click on the button below to enter your mobile number to receive an SMS with a link to download The Card Network (TCN) App. </p>
+                                        </td>
+                                        
+                                    </tr>
+                                </table>
+
+                                <table width="100%" class="table-content">
+                                    <tr>
+                                        <td>
+                                            <p class="num">1</p>
+                                            <p class="step-descrip">Click on the button below to enter your mobile number to receive an SMS with a link to download The Card Network (TCN) App. </p>
+                                        </td>
+                                        
+                                    </tr>
+                                </table>
+
+                                <table width="100%" class="table-content">
+                                    <tr>
+                                        <td>
+                                            <p class="num">1</p>
+                                            <p class="step-descrip">Click on the button below to enter your mobile number to receive an SMS with a link to download The Card Network (TCN) App. </p>
+                                        </td>
+                                        
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
