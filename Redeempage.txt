@@ -1,0 +1,189 @@
+import React, {  } from 'react';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
+import ReCAPTCHA from 'react-google-recaptcha';
+import CircularProgress from '@material-ui/core/CircularProgress';
+
+import './customRedeem.scss';
+
+const CustomRedeemFinalStep = () => {
+  return (
+    <>
+      <div className="redeem-page-wrapper">
+        <div className="redeem-header">
+          <img src={FrameImage} alt="Redeem Image" />
+        </div>
+        <div className="greeting-message">
+          <div className="greeting-message-text">
+            Hi {cardDetails?.name || ''}, follow the steps below to download
+            your digital Prepaid Visa card!
+          </div>
+          <div className="greeting-message-image">
+            <img src={RedeemImage} alt="Redeem Image" />
+          </div>
+        </div>
+        <div className="redeem-steps-wrapper">
+          <div className="redeem-step-text">IT&apos;S EASY AS 1, 2, 3!</div>
+          <div className="redeem-steps">
+            <div className="redeem-steps-1">
+              <div className="redeem-circle">1</div>
+              <div className="redeem-circle-text">
+                Enter your mobile number to receive an SMS with a link to
+                download The Card Network (TCN) App.
+              </div>
+            </div>
+            <div className="redeem-steps-2">
+              <div className="redeem-circle">2</div>
+              <div className="redeem-circle-text-1">
+                You&apos;ll then see your digital Prepaid Visa card in the TCN
+                App.
+              </div>
+
+              <div className="redeem-circle-text-2">
+                Already have the App? The link will give you access to your
+                personalised card.
+              </div>
+            </div>
+            <div className="redeem-steps-3">
+              <div className="redeem-circle">3</div>
+              <div className="redeem-circle-text">
+                Add your digital Prepaid Visa card to your phone’s wallet to
+                spend your reward credit anywhere Visa is accepted.
+              </div>
+            </div>
+          </div>
+          <div className="redeem-step-bottom">
+            <div className="redeem-step-bottom-text">
+              The link within your SMS will expire three months after you
+              receive it. You must download your digital Prepaid Visa card
+              within this time, or you will lose the rewards balance within the
+              card.{' '}
+            </div>
+          </div>
+        </div>
+        <div className="form-wrapper">
+          <div className="form-title">
+            Enter your mobile number to get started.
+          </div>
+          <div className="form-subtitle">
+            This is shared with TCN to set up access to your card.
+          </div>
+          <div className="form-container">
+            <TextField
+              className="text_field_black"
+              error={validationErrors.promotionId}
+              id="standard-number"
+              label="Card Activation Code"
+              type="text"
+              value={activationCode}
+              name="activationCode"
+              InputProps={{
+                readOnly: true
+              }}
+              helperText="*Is required."
+            />
+            <TextField
+              className="text_field_black"
+              error={validationErrors.promotionId}
+              id="standard-number"
+              label="Promotion Id"
+              type="number"
+              value={promotionId}
+              name="promotionId"
+              InputProps={{
+                readOnly: true
+              }}
+              helperText="*Is required."
+            />
+            <TextField
+              className="text_field_black"
+              error={validationErrors.mobile}
+              id="standard-number"
+              label="Mobile"
+              type="number"
+              name="mobile"
+              value={mobile}
+              onChange={(e) => setMobile(e.target.value)}
+              helperText="*Is required."
+            />
+            <TextField
+              className="text_field_black"
+              error={validationErrors.confirmMobile}
+              id="standard-number"
+              label="Confirm Mobile"
+              type="number"
+              name="confirmMobile"
+              value={confirmMobile}
+              onChange={(e) => setConfirmMobile(e.target.value)}
+              helperText={
+                validationErrors?.msg?.confirmMobile || '*Is required.'
+              }
+            />
+            <TextField
+              className="text_field_black"
+              error={validationErrors.firstName}
+              id="standard-number"
+              label="First Name"
+              type="text"
+              name="firstName"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              helperText="*Is required."
+            />
+
+            <TextField
+              className="text_field_black"
+              error={validationErrors.lastName}
+              id="standard-number"
+              label="Last Name"
+              type="text"
+              name="lastName"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              helperText="*Is required."
+            />
+
+            <TextField
+              className="text_field_black"
+              error={validationErrors.email}
+              id="standard-number"
+              label="Email"
+              type="text"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              helperText="*Is required."
+            />
+
+            <div className="recaptcha">
+              <ReCAPTCHA
+                sitekey="6LciNiQhAAAAACaOHFxUEadUjP7s6h491E9mFADP"
+                onChange={onChange}
+              />
+            </div>
+            <div className="btn-action">
+              <Button
+                className="btn-submit"
+                variant="outlined"
+                onClick={handleSubmit}
+                disabled={disableButton}
+                endIcon={
+                  loading ? (
+                    <CircularProgress
+                      style={{ color: '#FFFB00' }}
+                      size="20px"
+                    />
+                  ) : null
+                }
+              >
+                Submit
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default CustomRedeemFinalStep;

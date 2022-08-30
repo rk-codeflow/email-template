@@ -1,0 +1,114 @@
+import React from  "react";
+import { useSelector } from 'react-redux';
+
+import './success.scss';
+
+const RedeemSuccess = () => {
+  const cardDetails = useSelector((state) => state.cardRedeem.cardDetails);
+  const RedeemImage =
+    'https://tcncmpcardart.s3.ap-southeast-2.amazonaws.com/Tcncp/Suncorp/AAMI/Redeem/unlock_rewards.png';
+  const FrameImage =
+    'https://tcncmpcardart.s3.ap-southeast-2.amazonaws.com/Tcncp/Suncorp/AAMI/Redeem/Frame.png';
+
+  return (
+    <div className="redeem-page-wrapper">
+      <div className="redeem-header">
+        <img src={FrameImage} alt="Redeem Image" />
+      </div>
+      <div className="greeting-message">
+        <div className="greeting-message-text">
+          Hi {cardDetails?.name || ''}, follow the steps below to download your
+          digital Prepaid Visa card!
+        </div>
+        <div className="greeting-message-image">
+          <img src={RedeemImage} alt="Redeem Image" />
+        </div>
+      </div>
+      <div className="redeem-steps-wrapper">
+        <div className="redeem-step-text">IT&apos;S EASY AS 1, 2, 3!</div>
+        <div className="redeem-steps">
+          <div className="redeem-steps-1">
+            <div className="redeem-circle">1</div>
+            <div className="redeem-circle-text">
+              Enter your mobile number to receive an SMS with a link to download
+              The Card Network (TCN) App.
+            </div>
+          </div>
+          <div className="redeem-steps-2">
+            <div className="redeem-circle">2</div>
+            <div className="redeem-circle-text-1">
+              You&apos;ll then see your digital Prepaid Visa card in the TCN
+              App.
+            </div>
+
+            <div className="redeem-circle-text-2">
+              Already have the App? The link will give you access to your
+              personalised card.
+            </div>
+          </div>
+          <div className="redeem-steps-3">
+            <div className="redeem-circle">3</div>
+            <div className="redeem-circle-text">
+              Add your digital Prepaid Visa card to your phone’s wallet to spend
+              your reward credit anywhere Visa is accepted.
+            </div>
+          </div>
+        </div>
+        <div className="redeem-step-bottom">
+          <div className="redeem-step-bottom-text">
+            The link within your SMS will expire three months after you receive
+            it. You must download your digital Prepaid Visa card within this
+            time, or you will lose the rewards balance within the card.{' '}
+          </div>
+        </div>
+      </div>
+      <div className="thankyou-text-wrapper">
+        <div className="thankyou-title">
+          Thank you. You should receive an SMS soon.
+        </div>
+        <div className="thankyou-subtitle">
+          <div>
+            Follow the steps in the SMS to complete the download. The link
+            within your SMS will expire three months after you receive it. You
+            must download your digital Prepaid Visa card within this time, or
+            you will lose the rewards balance within the card.
+          </div>
+
+          <div className="mt-3">
+            If you need help downloading your digital Prepaid Visa card, get in
+            touch with the support team at The Card Network on{' '}
+            <span className="text-red">1300 375 346</span>.
+          </div>
+
+          <div className="mt-3">
+            Available Monday to Friday, 9am – 6pm and Saturday, 10am – 5pm AEDT.{' '}
+          </div>
+        </div>
+        <div className="thankyou-footer-text">
+          Sent by Think Wink Pty Ltd ABN 59 640 766 310,operator of the AAMI
+          Rewards platform. Think Wink is not a related company of AAI Limited
+          trading as AAMI. Full terms and conditions are available here. (url =
+          Sha TBC) &lt;TBC&gt; The Card Network (“TCN”) is the issuer of the
+          digital Prepaid Visa Card )(“Card”). You are responsible for all
+          transactions on the Card, except where there has been fraud or
+          negligence by TCN staff or agents. TCN may restrict or stop the use of
+          the Card if suspicious activities are noticed You are responsible for
+          checking your transaction history, knowing the available balance and
+          date of expiry for the Card. Balance and transaction history are
+          available to you within the TCN App. Any changes to the Terms and
+          Conditions can be viewed at{' '}
+          <span className="text-blue">www.thecardnetwork.com.au</span> .
+          Information will be disclosed to third parties about the Card, or
+          transactions made with the Card, whenever allowed by law, and also
+          where necessary to operate the Card and process transactions.
+          TCN&apos;s privacy policy can be viewed at
+          <span className="text-blue">
+            https://thecardnetwork.com.au/pages/privacy-policy
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default RedeemSuccess;
