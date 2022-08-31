@@ -24,127 +24,71 @@
         /****************
             CSS CLASSES
         *****************/
-        .wrapper {
-            width: 100%;
-            table-layout: fixed;
-        }
-        .main {
-            width: 100%;
-            max-width: 620px;
-            margin: 0 auto;
-            border-spacing: 0;
-            background-color: #F7F7F7;
-            padding-top: 33px;
-        }
-        .header {
-            padding-left: 21px;
-            padding-right: 30px;
-        }
-        .header-text {
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 40px;
-            border: 2px solid #C2C2C2;
-            border-radius: 25px;
-            text-transform: uppercase;
-            display: inline-block;
-            padding: 2px 50px 2px 13px;
-            margin-top: 0;
-            margin-bottom: 0;
-            white-space: nowrap;
-        }
-        .header-sub-text {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 30px;
-            margin-top: 0;
-            padding-left: 1rem;
-        }
-        .link {
-            font-weight: 500;
-            font-size: 13px;
-            line-height: 40px;
-            color: #666666;
-            padding-left: 1rem;
-        }
-        .padding {
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-        .cta-btn {
-            background: #92B605;
-            border-radius: 6px;
-            color: white;
-            padding: 10px 26px;
-            font-weight: 700;
-            font-size: 13px;
-            line-height: 20px;
-            text-align: center;
-            border: none;
-            cursor: pointer;
-        }
-        .three-cols {
-            text-align: center;
-            padding-top: 20px;
-            padding-bottom: 30px;
-        }
-        .three-cols .column {
-            width: 100%;
-            max-width: 160px;
-            display: inline-block;
-            vertical-align: top;
-        }
-        .col-padding {
-            padding: 10px;
-        }
-        .content {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 18px;
-            color: #535353;
-            position: relative;
-        }
-        .right-arrow {
-            position: absolute;
-            top: 15px;
-            left: 135px;
-        }
+
         @media screen and (max-width:450px) {
             .right-arrow {
                 display: none;
-            }
-            .col-padding {
-                padding: 5px;
-            }
-            
+            } 
         }
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <table class="main" width="100%">
+    <div class="wrapper" style="width: 100%;table-layout: fixed;">
+        <table class="main" width="100%" style=" width: 100%;max-width: 620px;margin: 0 auto;border-spacing: 0;background-color: #F7F7F7;padding-top: 33px;">
             <!-- header -->
             <tr>
-                <td class="header">
+                <td class="header" style="padding-left: 21px;padding-right: 30px;">
                     <table width="100%">
                         <tr>
                             <td>
-                                <h6 class="header-text">subject line:</h6>
-                                <p class="header-sub-text">Enjoy your reward for renewing your policy.</p>
+                                <h6 style="font-weight: 700;
+                                font-size: 16px;
+                                line-height: 40px;
+                                border: 2px solid #C2C2C2;
+                                border-radius: 25px;
+                                text-transform: uppercase;
+                                display: inline-block;
+                                padding: 2px 50px 2px 13px;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                white-space: nowrap;">subject line:</h6>
+                                <p class="header-sub-text" style="font-weight: 400;
+                                font-size: 16px;
+                                line-height: 30px;
+                                margin-top: 0;
+                                padding-left: 1rem;">Enjoy your reward for renewing your policy.</p>
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <h6 class="header-text">preheader:</h6>
-                                <p class="header-sub-text">Download your digital Prepaid Visa card. 
+                                <h6 class="header-text" style="font-weight: 700;
+                                font-size: 16px;
+                                line-height: 40px;
+                                border: 2px solid #C2C2C2;
+                                border-radius: 25px;
+                                text-transform: uppercase;
+                                display: inline-block;
+                                padding: 2px 50px 2px 13px;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                white-space: nowrap;">preheader:</h6>
+                                <p class="header-sub-text" style="font-weight: 400;
+                                font-size: 16px;
+                                line-height: 30px;
+                                margin-top: 0;
+                                padding-left: 1rem;">Download your digital Prepaid Visa card. 
                                 </p>
                             </td>
                         </tr>
 
                         <tr>
                             <td style="padding-top: 20px;padding-bottom: 20px;">
-                                <a href="#" class="link">View Online</a>
+                                <a href="#" class="link" style="font-weight: 500;
+                                font-size: 13px;
+                                line-height: 40px;
+                                color: #666666;
+                                padding-left: 1rem;">View Online</a>
                             </td>
                         </tr>
                     </table>
@@ -153,16 +97,11 @@
 
             <!-- banner -->
             <tr>
-                <td class="padding">
+                <td style="padding-left: 30px;padding-right: 30px;">
                     <table width="100%">
-                        <tr style="line-height: 0;">
-                            <td>
+                        <tr>
+                            <td style="line-height: 0;">
                                 <img src="https://i.ibb.co/P6CBRRS/logo-sm.png" alt="This is the top logo">
-                            </td>
-                        </tr>
-
-                        <tr style="line-height: 0;">
-                            <td>
                                 <img src="https://i.ibb.co/yqvT4rn/logo-lg.png" alt="This is full logo">
                             </td>
                         </tr>
@@ -172,7 +111,7 @@
 
             <!-- person name -->
             <tr>
-                <td class="padding">
+                <td style="padding-left: 30px;padding-right: 30px;">
                     <table width="100%" style="background:white;">
                         <tr>
                             <td style="padding-top: 30px; padding-bottom: 40px;text-align: center;color: #535353;
@@ -180,12 +119,12 @@
                                 <h6 class="primary-text" style="margin: 0;">
                                     <small style="font-size: 20px;line-height: 36px;">
                                         Hi 
-                                        <span class="f-name" style="color: #3B82F6;">EBPearls</span>
+                                        <span class="f-name" style="color: #3B82F6;">First Name</span>
                                     </small> 
                                 </h6>
 
                                 <h5 class="primary-text" style="margin: 0;font-weight: 600;font-size: 30px;line-height: 36px;">
-                                    Here's your <span class="amount" style="color: #3B82F6;">$500</span> reward!
+                                    Here's your <span class="amount" style="color: #3B82F6;">$value</span> reward!
                                 </h5>
                             </td>
                         </tr>
@@ -195,7 +134,7 @@
 
             <!-- redeem reward -->
             <tr>
-                <td class="padding">
+                <td style="padding-left: 30px;padding-right: 30px;">
                     <table width="100%" style="background:white;padding: 30px 20px;margin-top: 20px;">
                         <!-- image -->
                         <tr>
@@ -208,9 +147,18 @@
                         <tr>
                             <td style="text-align: center;font-weight: 400;font-size: 15px; line-height: 22px;color: #535353;">
                                 <p style="margin-top: 30px;margin-bottom: 30px;">
-                                    Renewing your AAMI insurance means your <span class="amount" style="color: #3B82F6;">$500</span>  worth of AAMI rewards credit has been turned into a digital Prepaid Visa card. How easy was that? The only hard part is choosing how you’ll spend it.
+                                    Renewing your AAMI insurance means your <span class="amount" style="color: #3B82F6;display: inline-block;">$500</span>  worth of AAMI rewards credit has been turned into a digital Prepaid Visa card. How easy was that? The only hard part is choosing how you’ll spend it.
                                 </p>
-                                <button class="btn cta-btn">REDEEM YOUR REWARD</button>
+                                <button style="background: #92B605;
+                                border-radius: 6px;
+                                color: white;
+                                padding: 10px 26px;
+                                font-weight: 700;
+                                font-size: 13px;
+                                line-height: 20px;
+                                text-align: center;
+                                border: none;
+                                cursor: pointer;">REDEEM YOUR REWARD</button>
                             </td>
                         </tr>
                     </table>
@@ -219,7 +167,7 @@
 
             <!-- steps -->
             <tr>
-                <td class="padding">
+                <td style="padding-left: 30px;padding-right: 30px;">
                     <table width="100%" style="background:white;margin-top: 20px;padding-top: 30px;">
                         <tr>
                             <td style="text-align: center;font-weight: 700;font-size: 27px; line-height: 36px;color: #535353;">
@@ -232,16 +180,25 @@
                             <td>
                                 <table width="100%">
                                     <tr>
-                                        <td class="three-cols">
+                                        <td style="text-align: center;
+                                        padding-top: 20px;
+                                        padding-bottom: 30px;">
                                             <!-- step 1 -->
-                                            <table class="column">
+                                            <table style=" width: 100%;
+                                            max-width: 160px;
+                                            display: inline-block;
+                                            vertical-align: top;">
                                                 <tr>
-                                                    <td class="col-padding">
-                                                        <table class="content">
+                                                    <td style="padding: 10px;">
+                                                        <table style="font-weight: 400;
+                                                        font-size: 14px;
+                                                        line-height: 18px;
+                                                        color: #535353;
+                                                        position: relative;">
                                                             <tr>
                                                                 <td>
                                                                     <img src="https://i.ibb.co/tJSCJgx/1.png" alt="step one">
-                                                                    <img src="https://i.ibb.co/5YqkTjR/arrow.png" class="right-arrow" alt="arrow pointing right">
+                                                                    <img src="https://i.ibb.co/5YqkTjR/arrow.png" class="right-arrow" alt="arrow pointing right" style="line-height: 1000%;">
                                                                     <p>Click on the button below to enter your mobile number to receive an SMS with a link to download The Card Network (TCN) App. </p>
                                                                 </td>
                                                             </tr>
@@ -251,14 +208,21 @@
                                             </table>
 
                                             <!-- step 2 -->
-                                            <table class="column">
+                                            <table style=" width: 100%;
+                                            max-width: 160px;
+                                            display: inline-block;
+                                            vertical-align: top;">
                                                 <tr>
-                                                    <td class="col-padding">
-                                                        <table class="content">
+                                                    <td style="padding: 10px;">
+                                                        <table style="font-weight: 400;
+                                                        font-size: 14px;
+                                                        line-height: 18px;
+                                                        color: #535353;
+                                                        position: relative;">
                                                             <tr>
                                                                 <td>
                                                                     <img src="https://i.ibb.co/bFD09Jt/2.png" alt="step one">
-                                                                    <img src="https://i.ibb.co/5YqkTjR/arrow.png" class="right-arrow" alt="arrow pointing right">
+                                                                    <img src="https://i.ibb.co/5YqkTjR/arrow.png" class="right-arrow" alt="arrow pointing right" style="line-height: 1000%;">
                                                                     <p>You'll then see your digital Prepaid Visa card in the TCN App.</p>
                                                                     <p>Already have the App? The link will give you access to your personalised card.</p>
                                                                 </td>
@@ -269,10 +233,17 @@
                                             </table>
 
                                             <!-- step 3 -->
-                                            <table class="column">
+                                            <table style=" width: 100%;
+                                            max-width: 160px;
+                                            display: inline-block;
+                                            vertical-align: top;">
                                                 <tr>
-                                                    <td class="col-padding">
-                                                        <table class="content">
+                                                    <td style="padding: 10px;">
+                                                        <table style="font-weight: 400;
+                                                        font-size: 14px;
+                                                        line-height: 18px;
+                                                        color: #535353;
+                                                        position: relative;">
                                                             <tr>
                                                                 <td>
                                                                     <img src="https://i.ibb.co/RpWL4dx/3.png" alt="step one">
@@ -287,7 +258,16 @@
                                     </tr>
                                     <tr>
                                         <td style="text-align: center;">
-                                            <button class="btn cta-btn">REDEEM YOUR REWARD</button>
+                                            <button style="background: #92B605;
+                                            border-radius: 6px;
+                                            color: white;
+                                            padding: 10px 26px;
+                                            font-weight: 700;
+                                            font-size: 13px;
+                                            line-height: 20px;
+                                            text-align: center;
+                                            border: none;
+                                            cursor: pointer;">REDEEM YOUR REWARD</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -304,10 +284,10 @@
 
             <!-- contact -->
             <tr>
-                <td class="padding">
-                    <table width="100%" style="background-color: #FFFFFF;margin-top: 20px;">
+                <td style="padding-left: 30px;padding-right: 30px;">
+                    <table width="100%" cellspacing="0" style="background-color: #FFFFFF;margin-top: 20px;">
                         <tr>
-                            <td style="padding: 30px;font-weight: 400; font-size: 14px; line-height: 28px; color: #2A2A2A;">
+                            <td style="padding: 30px 30px 0;font-weight: 400; font-size: 14px; line-height: 28px; color: #2A2A2A;">
                                 <p>
                                     If you require assistance redeeming your reward, please contact the support team at The Card Network on 1300 375 346.
                                 </p>
@@ -317,17 +297,9 @@
                                 <p style="line-height: 0;">The AAMI Rewards Team</p>
                             </td>
                         </tr>
-                    </table>
-                </td>
-            </tr>
-
-            <!-- footer -->
-            <tr>
-                <td>
-                    <table width="100%">
                         <tr>
-                            <td style="position: relative;top: -45px;">
-                                <img src="https://i.ibb.co/vJX0qx6/Footer.png" alt="This is the footer image">
+                            <td style="line-height: 0;">
+                                <img src="https://i.ibb.co/GPwSyfS/foot.png" alt="This is the footer image">
                             </td>
                         </tr>
                     </table>
@@ -336,10 +308,10 @@
 
             <!-- footer content -->
             <tr>
-                <td class="padding">
+                <td style="padding-left: 30px;padding-right: 30px;">
                     <table width="100%">
                         <tr>
-                            <td style="font-weight: 500;font-size: 10px;line-height: 15px;color:#535353;position:relative;top:-45px;padding-left: 30px;padding-right: 30px;">
+                            <td style="font-weight: 500;font-size: 10px;line-height: 15px;color:#535353;padding-left: 30px;padding-right: 30px;">
                                 <p>
                                     Sent by Think Wink Pty Ltd ABN 59 640 766 310,operator of the AAMI Rewards platform. Think Wink is not a related company of AAI Limited trading as AAMI. Full terms and conditions are available here. (url = Sha TBC)<TBC> The Card Network (“TCN”) is the issuer of the digital Prepaid Visa Card )(“Card”). You are responsible for all transactions on the Card, except where there has been fraud or negligence by TCN staff or agents. TCN may restrict or stop the use of the Card if suspicious activities are noticed You are responsible for checking your transaction history, knowing the available balance and date of expiry for the Card. Balance and transaction history are available to you within the TCN App. Any changes to the Terms and Conditions can be viewed at www.thecardnetwork.com.au. Information will be disclosed to third parties about the Card, or transactions made with the Card, whenever allowed by law, and also where necessary to operate the Card and process transactions. TCN’s privacy policy can be viewed at https://thecardnetwork.com.au/pages/privacy-policy</p>
                             </td>
