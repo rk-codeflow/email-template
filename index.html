@@ -119,12 +119,12 @@
                                 <h6 class="primary-text" style="margin: 0;">
                                     <small style="font-size: 20px;line-height: 36px;">
                                         Hi 
-                                        <span class="f-name" style="color: #3B82F6;">First Name</span>
+                                        <span class="f-name" style="color: #3B82F6;">{{recipientname}}</span>
                                     </small> 
                                 </h6>
 
                                 <h5 class="primary-text" style="margin: 0;font-weight: 600;font-size: 30px;line-height: 36px;">
-                                    Here's your <span class="amount" style="color: #3B82F6;">$value</span> reward!
+                                    Here's your <span class="amount" style="color: #3B82F6;">{{initialvalue}}</span> reward!
                                 </h5>
                             </td>
                         </tr>
@@ -149,7 +149,7 @@
                                 <p style="margin-top: 30px;margin-bottom: 30px;">
                                     Renewing your AAMI insurance means your <span class="amount" style="color: #3B82F6;display: inline-block;">$500</span>  worth of AAMI rewards credit has been turned into a digital Prepaid Visa card. How easy was that? The only hard part is choosing how you’ll spend it.
                                 </p>
-                                <button style="background: #92B605;
+                                <a href="{{cardlink}}" style="background: #92B605;
                                 border-radius: 6px;
                                 color: white;
                                 padding: 10px 26px;
@@ -158,7 +158,7 @@
                                 line-height: 20px;
                                 text-align: center;
                                 border: none;
-                                cursor: pointer;">REDEEM YOUR REWARD</button>
+                                cursor: pointer;text-decoration: none;">REDEEM YOUR REWARD</a>
                             </td>
                         </tr>
                     </table>
@@ -170,7 +170,7 @@
                 <td style="padding-left: 30px;padding-right: 30px;">
                     <table width="100%" style="background:white;margin-top: 20px;padding-top: 30px;">
                         <tr>
-                            <td style="text-align: center;font-weight: 700;font-size: 27px; line-height: 36px;color: #535353;">
+                            <td style="text-align: center;font-weight: 700;font-size: 27px; line-height: 36px;color: #535353;padding-left: 20px;padding-right: 20px;">
                                 <h4 style="margin: 0;">Follow the steps below to download your digital Prepaid Visa card.</h4>
                             </td>
                         </tr>
@@ -198,8 +198,22 @@
                                                             <tr>
                                                                 <td>
                                                                     <img src="https://i.ibb.co/tJSCJgx/1.png" alt="step one">
-                                                                    <img src="https://i.ibb.co/5YqkTjR/arrow.png" class="right-arrow" alt="arrow pointing right" style="line-height: 1000%;">
                                                                     <p>Click on the button below to enter your mobile number to receive an SMS with a link to download The Card Network (TCN) App. </p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <!-- step 1 arrow -->
+                                            <table style="width: 100%;max-width: 20px;display:inline-block;">
+                                                <tr>
+                                                    <td>
+                                                        <table>
+                                                            <tr>
+                                                                <td style="padding-top: 20px;padding-left: -10px;">
+                                                                    <img src="https://i.ibb.co/5YqkTjR/arrow.png" class="right-arrow" alt="arrow pointing right">
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -222,9 +236,23 @@
                                                             <tr>
                                                                 <td>
                                                                     <img src="https://i.ibb.co/bFD09Jt/2.png" alt="step one">
-                                                                    <img src="https://i.ibb.co/5YqkTjR/arrow.png" class="right-arrow" alt="arrow pointing right" style="line-height: 1000%;">
                                                                     <p>You'll then see your digital Prepaid Visa card in the TCN App.</p>
                                                                     <p>Already have the App? The link will give you access to your personalised card.</p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <!-- step 1 arrow -->
+                                            <table style="width: 100%;max-width: 20px;display:inline-block;">
+                                                <tr>
+                                                    <td>
+                                                        <table>
+                                                            <tr>
+                                                                <td style="padding-top: 20px;">
+                                                                    <img src="https://i.ibb.co/5YqkTjR/arrow.png" class="right-arrow" alt="arrow pointing right">
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -256,9 +284,10 @@
                                             </table>
                                         </td>
                                     </tr>
+
                                     <tr>
                                         <td style="text-align: center;">
-                                            <button style="background: #92B605;
+                                            <a href="{{cardlink}}" style="background: #92B605;
                                             border-radius: 6px;
                                             color: white;
                                             padding: 10px 26px;
@@ -267,11 +296,12 @@
                                             line-height: 20px;
                                             text-align: center;
                                             border: none;
-                                            cursor: pointer;">REDEEM YOUR REWARD</button>
+                                            cursor: pointer;text-decoration: none;">REDEEM YOUR REWARD</a>
                                         </td>
                                     </tr>
+
                                     <tr>
-                                        <td style="font-weight: 400;font-size: 15px;line-height: 26px;text-align: center;color: #535353;padding: 30px 5px 10px 5px;">
+                                        <td style="font-weight: 400;font-size: 15px;line-height: 26px;text-align: center;color: #535353;padding: 30px 25px 10px;">
                                             <p>The link within your SMS will expire three months after you receive it. You must download your digital Prepaid Visa card within this time, or you will lose the rewards balance within the card.</p>
                                         </td>
                                     </tr>
